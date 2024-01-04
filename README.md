@@ -12,38 +12,17 @@ This project explores data analysis using Python and Pandas.
    - Load the dataset into a Pandas DataFrame.
 
 2. **Data Cleaning:**
-   
-General Data Cleaning Steps:
-Understand the Data:
 
-Review data summary statistics and visualizations to identify potential issues.
-Handle Missing Values:
-
-Decide on an appropriate strategy based on the nature and amount of missing data.
-Handle Duplicates:
-
-Remove duplicates to avoid redundancy in the dataset.
-Handle Outliers:
-
-Address outliers that may affect the integrity of the analysis.
-Data Type Conversion:
-
-Ensure data types are compatible with the analysis.
-Handle Inconsistent Data:
-
-Standardize inconsistent data to improve uniformity.
-Handle Categorical Data:
-
-Encode categorical variables for analysis.
-Handle Text Data:
-
-Clean and preprocess text data if needed.
-Validate Results:
-
-Verify that the cleaning process did not introduce errors.
-Document the Cleaning Process:
-
-Document the steps taken to clean the data for transparency and reproducibility.
+Understand the Data: Review data summary statistics and visualizations to identify potential issues.
+Handle Missing Values: Decide on an appropriate strategy based on the nature and amount of missing data.
+Handle Duplicates: Remove duplicates to avoid redundancy in the dataset.
+Handle Outliers: Address outliers that may affect the integrity of the analysis.
+Data Type Conversion: Ensure data types are compatible with the analysis.
+Handle Inconsistent Data: Standardize inconsistent data to improve uniformity.
+Handle Categorical Data: Encode categorical variables for analysis.
+Handle Text Data: Clean and preprocess text data if needed.
+Validate Results: Verify that the cleaning process did not introduce errors.
+Document the Cleaning Process: Document the steps taken to clean the data for transparency and reproducibility.
 
 3. **Data Exploration:**
    - When we use pd.Series(larger_dataset), we are converting the NumPy array larger_dataset into a Pandas Series. This allows us to leverage Pandas' functionality, including the describe method, which provides summary statistics for the data.
