@@ -9,7 +9,7 @@ This project explores data analysis using Python and Pandas.
 ## Steps
 
 1. **Data Loading:**
-   - Load the dataset into a Pandas DataFrame.
+Load the dataset into a Pandas DataFrame.
 
 2. **Data Cleaning:**
 
@@ -25,10 +25,8 @@ Validate Results: Verify that the cleaning process did not introduce errors.
 Document the Cleaning Process: Document the steps taken to clean the data for transparency and reproducibility.
 
 3. **Data Exploration:**
-   - When we use pd.Series(larger_dataset), we are converting the NumPy array larger_dataset into a Pandas Series. This allows us to leverage Pandas' functionality, including the describe method, which provides summary statistics for the data.
-   - Loading Data
-   
-import pandas as pd
+When we use pd.Series(larger_dataset), we are converting the NumPy array larger_dataset into a Pandas Series. This allows us to leverage Pandas' functionality, including the describe method, which provides summary statistics for the data.
+Loading Data: import pandas as pd
 
 # Load data from a CSV file
 df = pd.read_csv('filename.csv')
@@ -46,8 +44,6 @@ df.dtypes
 
 # Convert data types
 df['Column'] = df['Column'].astype('new_type')
-
-   - Handling Missing Values: Decide on appropriate strategies for handling missing values based on the context.
      
 # Check for missing values
 df.isnull().sum()
@@ -58,19 +54,17 @@ df.dropna(inplace=True)
 # Fill missing values
 df['Column'].fillna(value, inplace=True)
 
-   - Value Counts
-     
+Value Counts     
 # Count occurrences of unique values
 df['Column'].value_counts()
 
-   - GroupBy: Use the GroupBy function to aggregate data and gain insights into patterns.
-
+GroupBy: Use the GroupBy function to aggregate data and gain insights into patterns.
 # Group by a column and calculate aggregate functions
 df.groupby('Category')['Column'].mean()
 
-   - Correlation: correlation_matrix = df.corr()
+Correlation: correlation_matrix = df.corr()
 
-   - Histogram: Combine statistical summaries with visualizations for a comprehensive understanding.
+Histogram: Combine statistical summaries with visualizations for a comprehensive understanding.
 
 # Plot histogram
 df['Column'].hist(bins=10, color='skyblue', edgecolor='black')
